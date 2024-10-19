@@ -1,0 +1,338 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+}
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 15px;
+}
+
+.social-logo {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    transition: transform 0.3s;
+}
+
+.social-logo:hover {
+    transform: scale(1.2);
+}
+
+.profile-img {
+    width: 230px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 800px;
+    margin: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    animation: fadeIn 2s;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    animation: fadeIn 2s 0.5s;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
+.container {
+    padding: 40px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s;
+}
+
+h2 {
+    border-bottom: 2px solid #ffa500;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 2em; /* Adjust title size */
+    margin: 20px 0 10px; /* Reduce top and bottom margins */
+    text-align: center; /* Center align the title */
+}
+
+h3 {
+    font-size: 1.5em; /* Adjust subtitle size */
+    margin: 10px 0 5px; /* Reduce top and bottom margins */
+    text-align: left; /* Align left for subtitles */
+}
+
+/* Adjust section padding */
+section {
+    padding: 20px 0; /* Adjust top and bottom padding */
+    margin: 20px auto; /* Center align with margin */
+}
+
+#projects, #skills, #certifications, #contact {
+    padding: 30px 20px; /* Reduce padding in project sections */
+    border-radius: 10px; /* Keep rounded corners */
+    background: rgba(0, 0, 0, 0.7); /* Maintain background for visibility */
+}
+.resume-button {
+    display: inline-block; /* Make link look like a button */
+    margin-top: 15px; /* Space above the button */
+    padding: 10px 15px; /* Padding for the button */
+    background: #28a745; /* Green background color */
+    color: white; /* Button text color */
+    border-radius: 5px; /* Rounded corners for button */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s; /* Add hover effect */
+}
+
+.resume-button:hover {
+    background: #218838; /* Darker green on hover */
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.grid-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+#projects {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for contrast */
+    color: white; /* Text color */
+    padding: 40px 20px; /* Adjust padding for space */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px auto; /* Center align with margin */
+    max-width: 900px; /* Set a maximum width for better layout */
+}
+
+.project {
+    margin: 20px 0; /* Spacing between projects */
+    padding: 15px; /* Padding inside each project block */
+    background: rgba(255, 255, 255, 0.1); /* Slightly lighter background for each project */
+    border-radius: 8px; /* Rounded corners for each project */
+    transition: transform 0.3s; /* Add hover effect */
+}
+
+.project:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+.project h3 {
+    margin: 0; /* Remove default margin */
+}
+
+.project-link {
+    display: inline-block; /* Make the link behave like a block element */
+    margin-top: 10px; /* Space above the link */
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove any default borders */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for the button text */
+    font-weight: bold; /* Make the button text bold */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and scale */
+    text-align: center; /* Center align text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow to make it stand out */
+}
+
+.project-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+.project-button {
+    display: inline-block; /* Make the link behave like a block element */
+    margin-top: 10px; /* Space above the link */
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #89361e; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove any default borders */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for the button text */
+    font-weight: bold; /* Make the button text bold */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and scale */
+    text-align: center; /* Center align text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow to make it stand out */
+}
+
+.project-button:hover {
+    background-color: #c9ad13; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+/* Education Section Styles */
+#education {
+    background: rgba(0, 0, 0, 0.7); /* Maintain background for visibility */
+    color: white; /* Text color */
+    padding: 30px 20px; /* Adjust padding for space */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px auto; /* Center align with margin */
+    max-width: 900px; /* Set a maximum width for better layout */
+}
+
+.education-item {
+    margin: 20px 0; /* Spacing between education items */
+    padding: 15px; /* Padding inside each education block */
+    background: rgba(255, 255, 255, 0.1); /* Slightly lighter background for each education item */
+    border-radius: 8px; /* Rounded corners for each education item */
+    transition: transform 0.3s; /* Add hover effect */
+}
+
+.education-item:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+.education-item h3 {
+    margin: 0; /* Remove default margin */
+}
+
+/* Experience Section Styles */
+#experience {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for contrast */
+    color: white; /* Text color */
+    padding: 30px 20px; /* Adjust padding for space */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px auto; /* Center align with margin */
+    max-width: 900px; /* Set a maximum width for better layout */
+}
+
+.experience-item {
+    margin: 20px 0; /* Spacing between experience items */
+    padding: 15px; /* Padding inside each experience block */
+    background: rgba(255, 255, 255, 0.1); /* Slightly lighter background for each experience item */
+    border-radius: 8px; /* Rounded corners for each experience item */
+    transition: transform 0.3s; /* Add hover effect */
+}
+
+.experience-item:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+.experience-item h3 {
+    margin: 0; /* Remove default margin */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background: #ffa500;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #ff8c00;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+   
